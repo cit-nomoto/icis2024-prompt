@@ -29,56 +29,52 @@ main.py実行時に引数を設定することで、任意の開発文書の組�
 実験の実施のみを目的としたため、リファクタリングなどは実施していない。
 
 ## Requirements
-in "requirements.txt"
 - Python 3.x (3.10 tested)
-- `openai` library
 - An OpenAI API key stored in the environment variable `API_KEY` in `.env`
 
 ## Usage
-bash  
+in bash  
 
-- set OpenAI API key 
+- set OpenAI API key  
+
 touch .env && echo API_KEY=[your openai api_key] > .env
 
-- install openai, python-dotenv  
+- install package
+
 pip install -r requirements.txt  
 
-- run  
+- run
+
 python3 main.py [OPTIONS]
 
 # Options
+
 - Required  
---O
-Description: The path to the directory where the generated source code will be saved.  
-Example: --O /path/to/output/directory  
+ 
+--O  
+The path to the directory where the generated source code will be saved.  
 
---C
-
-Description: The number of times to generate the source code. The default value is 1.  
-Example: --C 3 (to generate the source code 3 times)  
+--C  
+The number of times to generate the source code. 
 
 
 - Optional  
---r  
 
-Description: The path to the requirements document. This document contains the project requirements.  
-Example: --r /path/to/requirements.txt  
+--r  
+The path to the requirements definition document. 
+  
 --b  
+The path to the basic design document. 
   
-Description: The path to the basic design document. This document contains basic design information of the system.  
-Example: --b /path/to/basic_design.txt  
 --d  
-  
-Description: The path to the detailed design document. This document contains detailed design information of the system.  
-Example: --d /path/to/detail_design.txt  
+The path to the detailed design document. 
 
 # Example
-- only requirements definition document
-python3 main.py --r doc/requir.txt --O [output path] --C [number of times]
 
-- All development documents, output=./prompt3, count=10
+- All development documents, output=./prompt3, count=10  
 python3 main.py --r doc/requir.txt --b doc/basic.txt --d doc/detail.txt --O ./prompt3 --C 10
-
+  
 
 ## Reference
+
 [1], "Analysis of Quality Improving of Source Code Generation by LLM along with More Detailing of  Development Documents", icis2024-summer, p3, 2024
