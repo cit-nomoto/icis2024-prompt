@@ -8,9 +8,9 @@ Due to the amount of text, it would be nearly impossible to list all the prompts
 
 Each text intended for the development documents is located in the "doc" folder, and the main content of the prompts is written in "utils.py".
 
-このプログラムは、icis2024 summer 3 SS3-12 における調査実験のために使用した。
+このプログラムは、icis2024 summer 3 SS3-12 における調査実験を実施するためのツールである。
 
-文章量の関係から実験に使用したプロンプト詳細に記載することが困難であるためここに記す。
+文章量の観点から、実験に使用したプロンプトを詳細に記載することが困難であるためここに記す。
 
 開発文書を想定した各テキストは "doc "フォルダに配置され、プロンプトの主な内容は "utils.py "に記載されている。
 
@@ -26,7 +26,7 @@ I made this program for personal use, so I haven't done any detailed refactoring
 
 main.py実行時に引数を設定することで、任意の開発文書の組み合わせで、任意の回数のソースコードを生成することができる。
 
-実験の実施のみを目的としたため、リファクタリングなどは実施していない。
+実験の実施のみが目的であるため、本ツールのリファクタリングなどは行っていない。
 
 ## Requirements
 - Python 3.x (3.10 tested)
