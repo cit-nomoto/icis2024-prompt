@@ -1,14 +1,17 @@
 icis2024-prompt
+
+##Paper Title: Analysis of Quality Improving of Source Code Generation by LLM along with More Detailing of  Development　Documents
 ====
 Overview  
 
-This program used to generate the source code for the icis2024 summer 3 SS3-12 research experiment.  
+This program used to generate the source code for the icis2024 summer 3 SS3-12(July 16 2024, changed SS3-11)
+research experiment.  
 
 Due to the amount of text, it would be nearly impossible to list all the prompts used in the experiment, so I'll leave them here.
 
 Each text intended for the development documents is located in the `doc` folder, and the main content of the prompts is written in `utils.py`.
 
-このプログラムは、icis2024 summer 3 SS3-12 における調査実験を実施するためのツールである。
+このプログラムは、icis2024 summer 3 SS3-12 (当日ss3-11に変わった)における調査実験を実施するためのツールである。
 
 文章量の観点から、実験に使用したプロンプトを詳細に記載することが困難であるためここに記す。
 
