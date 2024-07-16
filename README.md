@@ -1,6 +1,6 @@
 icis2024-prompt
 
-##Paper Title: Analysis of Quality Improving of Source Code Generation by LLM along with More Detailing of  Development　Documents
+##Paper Title: Analysis of Quality Improving of Source Code Generation by LLM along with More Detailing of  Development Documents
 ====
 Overview  
 
